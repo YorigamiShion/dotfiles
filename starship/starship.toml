@@ -1,0 +1,85 @@
+format = """
+$username\
+$hostname\
+$shlvl\
+$time\
+$memory_usage\
+$docker_context\
+$package\
+$golang\
+$java\
+$kotlin\
+$lua\
+$nodejs\
+$python\
+$conda\
+$env_var\
+$crystal\
+$line_break\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$custom\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$status\
+$character"""
+
+
+[time]
+disabled = false
+format = ' [$time]($style) '
+time_format = '%a %T'
+
+[status]
+disabled = false
+
+[git_commit]
+tag_disabled = false
+only_detached = false
+tag_symbol = ""
+
+
+[directory]
+read_only = " "
+
+[docker]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+format = "[$symbol($version) ]($style)"
+symbol = " "
+
+[java]
+format = "[$symbol($version) ]($style)"
+symbol = " "
+
+[memory_usage]
+disabled = false
+threshold = -1
+format = "$symbol[${ram}]($style) "
+symbol = " "
+
+[nodejs]
+format = "[$symbol($version) ]($style)"
+symbol = " "
+
+[package]
+format = "[$symbol$version]($style) "
+symbol = " "
+
+[python]
+format = "[$symbol($version) ]($style)"
+symbol = " "
+
+[lua]
+format = "[$symbol($version) ]($style)"
+symbol = " "
